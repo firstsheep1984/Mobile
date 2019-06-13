@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.assignment_layout_yangyang;
 
 import androidx.appcompat.app.AppCompatActivity;
 

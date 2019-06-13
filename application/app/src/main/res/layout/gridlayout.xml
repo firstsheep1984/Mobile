@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/view"
+        android:background="@color/colorPrimary"
+        android:layout_width="0dp"
+        android:layout_rowWeight="1"
+
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+
+        android:layout_row="0"
+        android:layout_column="0"
+
+        />
+
+    <View
+        android:id="@+id/view1"
+        android:background="@color/colorAccent"
+        android:layout_width="0dp"
+        android:layout_rowWeight="1"
+
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+
+        android:layout_row="0"
+        android:layout_column="1"
+
+        />
+    <View
+        android:id="@+id/view2"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="0dp"
+        android:layout_rowWeight="1"
+
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+
+        android:layout_row="1"
+        android:layout_column="0"
+
+        />
+    <View
+        android:id="@+id/view3"
+        android:background="#F32D2D"
+        android:layout_width="0dp"
+        android:layout_rowWeight="1"
+
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+
+        android:layout_row="1"
+        android:layout_column="0"
+
+        />
+    <View
+        android:id="@+id/view4"
+        android:background="#2196F3"
+        android:layout_width="0dp"
+        android:layout_rowWeight="1"
+
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+
+        android:layout_row="1"
+        android:layout_column="1"
+
+        />
+    <View
+        android:id="@+id/view5"
+        android:background="#FFC107"
+        android:layout_width="0dp"
+        android:layout_rowWeight="1"
+
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+
+        android:layout_row="1"
+        android:layout_column="2"
+
+        android:layout_rowSpan="2"
+        />
+    <View
+        android:id="@+id/view6"
+        android:background="#CE0BF0"
+        android:layout_width="0dp"
+        android:layout_rowWeight="1"
+
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+
+        android:layout_row="2"
+        android:layout_column="0"
+
+        android:layout_columnSpan="2"
+        />
+</GridLayout>

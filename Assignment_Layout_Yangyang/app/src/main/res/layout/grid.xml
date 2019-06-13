@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="25dp"
+    android:rowCount="10"
+    android:columnCount="5">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To:"
+        android:textSize="20dp"
+        android:layout_row="0"
+        android:layout_column="0"/>
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:layout_columnSpan="3"
+        android:text="Enter your email"
+        android:textColor="#585F68" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="match_parent"
+        android:layout_height="563dp"
+        android:layout_row="1"
+        android:layout_rowSpan="8"
+        android:layout_column="0"
+        android:layout_columnSpan="4"
+        android:text="Message"
+        android:gravity="top"
+        android:textColor="#585F68" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="9"
+        android:layout_column="3"
+        android:layout_gravity="right"
+        android:text="send"
+        android:textColor="#585F68"/>
+</GridLayout>
