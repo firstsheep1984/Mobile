@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:padding="16dp"
+
+    android:stretchColumns="*">
+    <!--android:stretchColumns="0,1"-->
+    <!--android:shrinkColumns="0,1,2"-->
+    <!--android:collapseColumns="1"-->
+
+    <TableRow>
+        <!--
+            We can define in each table row that
+            in which column we want to put an element
+        -->
+        <!-- android:layout_column="1" -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Time" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="First Name" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Last Name" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+    </TableRow>
+
+    <TableRow>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+
+            android:layout_span="2" />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/button_0"
+
+            style="@style/Widget.AppCompat.Button.Colored"
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+
+            android:text="Submit"
+            android:textAllCaps="false" />
+
+    </TableRow>
+
+
+</TableLayout>
+
