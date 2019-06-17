@@ -60,6 +60,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REQUEST_CODE1) {
+            String receivedData = (String) data.getStringExtra("return_result_tag");
+
+            if (resultCode == RESULT_OK)
+                textView_feedBack.setText(receivedData);
+            else
+                textView_feedBack.setText("Canceled");
+        }
+
+        if (requestCode == REQUEST_CODE2) {
+            String receivedData = (String) data.getStringExtra("return_result_from_test2");
+
+            if (resultCode == RESULT_OK)
+                textView_feedBack.setText(receivedData);
+            else
+                textView_feedBack.setText("Canceled from test2");
+        }
     }
 
 }
