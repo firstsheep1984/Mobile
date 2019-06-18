@@ -108,7 +108,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 return false;
             }
         });
-        intentSubMenu.add("Camera").setOnMenuItemClickListener((menuItem) -> {
+        intentSubMenu.add("Camera").setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem menuItem) {
                 /*Manually add to manifest.xml*/
 
                 Intent intent = new Intent(MainActivity.this, activity_camera.class);
@@ -116,7 +118,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 return false;
 
             }
-        );
+        });
 
         return super.onCreateOptionsMenu(menu);
     }
