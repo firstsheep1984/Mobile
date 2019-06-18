@@ -4,14 +4,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Random;
 
-public class activity_test1 extends AppCompatActivity implements View.OnClickListener{
+public class activity_test1 extends AppCompatActivity implements View.OnClickListener, TextWatcher {
     TextView textViewOperation;
     EditText editTextAnswer;
     Button btnGenerate, btnValidate, btnCancel;
@@ -38,8 +41,8 @@ public class activity_test1 extends AppCompatActivity implements View.OnClickLis
         btnCancel.setOnClickListener(this);
 
         //------------------------------------------ Validation
-       // editTextAnswer.addTextChangedListener(this);
-        //btnValidate.setEnabled(false);
+        editTextAnswer.addTextChangedListener(this);
+       btnValidate.setEnabled(false);
     }
 
     @Override
@@ -101,4 +104,29 @@ public class activity_test1 extends AppCompatActivity implements View.OnClickLis
         setResult(RESULT_CANCELED, intent);
         finish();
     }
+    // TextWatcher Interface
+   @Override
+    public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+    }
+
+    @Override
+    public void onTextChanged(CharSequence s, int start, int before, int count) {
+    }
+
+    @Override
+    public void afterTextChanged(Editable s) {
+
+        try {
+            int nb = Integer.valueOf(editTextAnswer.getText().toString());
+            if (nb > 18) {
+                Toast.makeText(this, "The total should be <= 18", Toast.LENGTH_SHORT).show();
+                btnValidate.setEnabled(false);
+            } else
+                btnValidate.setEnabled(true);
+        } catch (Exception e) {
+            Toast.makeText(this, "Enter a number data type", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+
 }
