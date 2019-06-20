@@ -9,38 +9,38 @@
     android:padding="25dp">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_builder1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="AlertDialog.Builder 1 (Implementation 1)" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button_builder2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="AlertDialog.Builder 2 (Implementation 2)" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/button_builder3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="AlertDialog.Builder 3 - Radio Buttons" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/button_builder4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="AlertDialog.Builder 4 - Multi Selection" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/button_progress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="Progress Dialog" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/button_custom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="Custom Dialog" />
 </LinearLayout>
