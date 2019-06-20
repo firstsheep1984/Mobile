@@ -4,11 +4,15 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class DIalogActivity extends AppCompatActivity implements View.OnClickListener, DialogInterface.OnClickListener {
     Button button_builder1, button_builder2, button_builder3, button_builder4, button_progress, button_custom;
@@ -73,10 +77,10 @@ public class DIalogActivity extends AppCompatActivity implements View.OnClickLis
                 builder4();
                 break;
             case R.id.button_progress:
-                // progress();
+             //    progress();
                 break;
             case R.id.button_custom:
-                //custom();
+                custom();
                 break;
 
         }
@@ -148,6 +152,46 @@ public class DIalogActivity extends AppCompatActivity implements View.OnClickLis
                         })
                 .setPositiveButton("OK", null);
         builder.show();
+    }
+  /*  private void progress() {
+        final ProgressDialog progressDialog = new Package(this);
+        // progressDialog.setCancelable(false);
+        // Disable ability to dismiss progress dialog
+        progressDialog.setTitle("progress dialog example");
+        progressDialog.setMessage("Please wait...");
+
+        // by removing this line the default style will be used which is spinner
+        progressDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+
+        // we can use this line when we do not know when the progress will be finished
+        // for activating this line simulator code must be disabled
+        progressDialog.setIndeterminate(true);
+        progressDialog.show();
+
+        // create a simulator to start the progress from 0 and increase to 100
+        progressDialog.setProgress(0);
+
+        // change the progress in the specific time interval
+        new Timer().scheduleAtFixedRate(new TimerTask() {
+            @Override
+            public void run() {
+                //progressDialog.getMax() is 100%
+                if(progressDialog.getProgress() < progressDialog.getMax()){
+                    // increase progress 1% each 200 ms
+                    progressDialog.incrementProgressBy(1);
+                }else {
+                    // progressDialog.getMax() == 100% dismiss progressDialog
+                    progressDialog.dismiss();
+                    this.cancel();
+                }
+            }
+        },0,200);
+    }
+    */
+    private void custom() {
+        Dialog dialog = new Dialog(this);
+        dialog.setContentView(R.layout.activity_dialog);
+        dialog.show();
     }
 
 }

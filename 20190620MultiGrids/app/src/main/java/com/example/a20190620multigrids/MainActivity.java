@@ -83,6 +83,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void spinner() {
+        //  String lastName = editText_LastName.getText().toString();
+        Intent myIntent = new Intent(this, SpinnerActivity.class);
+        // myIntent.putExtra("lastName", lastName);
+        startActivity(myIntent);
     }
 
     private void toast() {
