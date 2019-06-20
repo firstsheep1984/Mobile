@@ -42,5 +42,8 @@ public class SpinnerActivity extends AppCompatActivity implements View.OnClickLi
     }
 
     private void add() {
+        String meal = spinner.getSelectedItem().toString();
+        int rating = (int) ratingBar.getRating();
+
     }
 }
