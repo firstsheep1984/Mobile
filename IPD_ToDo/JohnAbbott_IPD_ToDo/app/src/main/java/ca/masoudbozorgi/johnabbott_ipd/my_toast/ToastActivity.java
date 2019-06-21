@@ -1,10 +1,11 @@
-package com.example.a20190620multigrids;
+package ca.masoudbozorgi.johnabbott_ipd.my_toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
+
+import ca.masoudbozorgi.johnabbott_ipd.R;
 
 public class ToastActivity extends AppCompatActivity {
 
@@ -13,6 +14,7 @@ public class ToastActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_toast);
     }
+
     public void simpleToast(View v) {
         Toast.makeText(this, "Test", Toast.LENGTH_SHORT).show();
     }

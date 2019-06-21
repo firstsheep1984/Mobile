@@ -1,16 +1,17 @@
-package com.example.a20190620multigrids;
+package ca.masoudbozorgi.johnabbott_ipd.my_toast;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import ca.masoudbozorgi.johnabbott_ipd.R;
+
 public class ToastCustom {
+
     Toast toast;
 
     // view and context are the elements we need to customize the toast object
@@ -50,6 +51,4 @@ public class ToastCustom {
             return;
         ((ImageView) view.findViewById(R.id.toast_icon)).setImageResource(iconResId);
     }
-
-
 }

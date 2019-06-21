@@ -90,6 +90,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void toast() {
+        startActivity(new Intent(this, ToastActivity.class));
     }
 
     private void listview() {
