@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 listview();
                 break;
             case R.id.button_toast:
-                toast();
+                startActivity(new Intent(this, ToastActivity.class));
                 break;
             case R.id.button_file:
                 file();
@@ -89,9 +89,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         startActivity(myIntent);
     }
 
-    private void toast() {
-        startActivity(new Intent(this, ToastActivity.class));
-    }
+
+
+
 
     private void listview() {
     }
