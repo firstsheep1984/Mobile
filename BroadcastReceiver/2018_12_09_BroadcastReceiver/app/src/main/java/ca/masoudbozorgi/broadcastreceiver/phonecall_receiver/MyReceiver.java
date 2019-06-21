@@ -1,13 +1,15 @@
-package com.example.a20190621receivephonecall.phonecall_receiver;
+package ca.masoudbozorgi.broadcastreceiver.phonecall_receiver;
+
 
 import android.content.Context;
-import android.content.Intent;
 import android.util.Log;
 
 import java.util.Date;
 
 public class MyReceiver extends PhoneCallReceiver {
+
     private static final String TAG = MyReceiver.class.getSimpleName();
+
     @Override
     protected void onIncomingCallStarted(Context ctx, String number, Date start) {
         Log.i(TAG, "---------- incoming : started <" + number + ">");

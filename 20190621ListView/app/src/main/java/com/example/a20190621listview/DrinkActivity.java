@@ -32,12 +32,12 @@ public class DrinkActivity extends Activity {
         AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                if(i==0) {
+
                     Intent intent = new Intent(DrinkActivity.this, DrinkCategoryActivity.class);
 
-                    intent.putExtra(EXTRA_DRINKED, i);
+                    intent.putExtra(EXTRA_DRINKED, (int)l);
                     startActivity(intent);
-                }
+
             }
         };
 

@@ -1,18 +1,18 @@
-package com.example.a20190621receivephonecall;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
+package ca.masoudbozorgi.broadcastreceiver;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.os.Build;
+import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     private static final int PERMS_REQ_CODE = 1234;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
             checkPermissions();
         }
     }
+
     private void checkPermissions() {
         if (!hasPermissionForCallEvent()) {
 
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
             ActivityCompat.requestPermissions(this, perms, PERMS_REQ_CODE);
         }
     }
+
     private boolean hasPermissionForCallEvent() {
         return ActivityCompat.checkSelfPermission(this,
                 Manifest.permission.READ_PHONE_STATE)
@@ -47,11 +49,17 @@ public class MainActivity extends AppCompatActivity {
                         == PackageManager.PERMISSION_GRANTED;
     }
 
+    // On receiving response for permission request
     @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+    public void onRequestPermissionsResult(
+            int requestCode,
+            @NonNull String[] permissions,
+            @NonNull int[] grantResults) {
+
+        // Check if the permission response is for our request code
         if(requestCode == PERMS_REQ_CODE){
             if(grantResults[0] == PackageManager.PERMISSION_GRANTED &&
-                    grantResults[1] == PackageManager.PERMISSION_GRANTED) {
+               grantResults[1] == PackageManager.PERMISSION_GRANTED) {
 
                 Toast.makeText(this, "Permission granted.", Toast.LENGTH_SHORT).show();
             } else {

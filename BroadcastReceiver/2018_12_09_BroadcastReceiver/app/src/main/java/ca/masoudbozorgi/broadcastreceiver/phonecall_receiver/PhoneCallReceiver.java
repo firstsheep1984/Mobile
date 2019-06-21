@@ -1,4 +1,4 @@
-package com.example.a20190621receivephonecall.phonecall_receiver;
+package ca.masoudbozorgi.broadcastreceiver.phonecall_receiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -8,22 +8,49 @@ import android.util.Log;
 
 import java.util.Date;
 
+/*
+    <!-- =================== Manually added ===================== -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- ======================================================== -->
+
+
+    <!-- ==================== Manually added ==================== -->
+    <!-- Introduce Broadcast Receiver Class and type of broadcast events wants to listen -->
+        <receiver android:name=".phonecall_receiver.MyReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+            </intent-filter>
+            <intent-filter >
+                <action android:name="android.intent.action.PHONE_STATE"/>
+            </intent-filter>
+        </receiver>
+    <!-- ======================================================== -->
+* */
+
+
+// 1- Create a class that extends BroadcastReceiver
 public abstract class PhoneCallReceiver extends BroadcastReceiver {
-    // get name of the class
+
+    // Get the name of the class
     private static final String TAG = PhoneCallReceiver.class.getSimpleName();
 
-    // define required attributes
-    private static int lastState = TelephonyManager.CALL_STATE_IDLE;
-    private static Date callStartTime;
-    private static boolean isIncoming;
-    private static String savedNumber;
+    // 3- Define required attributes
+    private static int lastState = TelephonyManager.CALL_STATE_IDLE; // States: IDLE, OFFHOOK, RINGING
+    private static Date callStartTime;   // Call date
+    private static boolean isIncoming;   // Is current call an incoming call
+    private static String savedNumber;   // Save the number
 
     // 2- Override onReceive() to listen to specific intent
     // Determine and save current state of the phone
     // OS will pass an intent to this method which contains broadcast event information
     @Override
     public void onReceive(Context context, Intent intent) {
-// 2-1- getAction() return the purpose of passed intent, what is the reason we have this intent
+
+        // 2-1- getAction() return the purpose of passed intent, what is the reason we have this intent
         if(intent.getAction().equals("android.intent.action.NEW_OUTGOING_CALL")){
             savedNumber = intent.getExtras().getString("android.intent.extra.PHONE_NUMBER");
 
@@ -57,6 +84,7 @@ public abstract class PhoneCallReceiver extends BroadcastReceiver {
             onCallStateChanged(context, state, savedNumber);
         }
     }
+
     // Actions based on phone state
     private void onCallStateChanged(Context context, int state, String number) {
 
@@ -127,6 +155,7 @@ public abstract class PhoneCallReceiver extends BroadcastReceiver {
 
         lastState = state;
     }
+
     // To override by derived class
 
     // Start
