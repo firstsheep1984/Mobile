@@ -1,14 +1,18 @@
 package com.example.phonebook.model;
 
+import com.example.phonebook.R;
+
 public class Person {
     private String name;
+    private String family;
     private String phone;
     private String email;
     private String address;
     private int imageResourceId;
 
-    public Person(String name, String phone, String email, String address, int imageResourceId) {
+    public Person(String name, String family, String phone, String email,  String address, int imageResourceId) {
         this.name = name;
+        this.family = family;
         this.phone = phone;
         this.email = email;
         this.address = address;
@@ -17,6 +21,10 @@ public class Person {
 
     public String getName() {
         return name;
+    }
+
+    public String getFamily() {
+        return family;
     }
 
     public String getPhone() {
@@ -37,12 +45,12 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                '}';
+        return getName() + " " + getFamily();
     }
     public static final Person[] personList = {
-         //   new Person("Latte", " A couple of espresso shots with steamed milk", R.drawable.poutine),
+            new Person("Fire","fighter","5144444555", "fire@gmail.com","111 Street Jisl, QC",R.drawable.fire_fighter),
+            new Person("Patric","Sang","5144678555", "patrick@gmail.com","123 Street Jisl, QC",R.drawable.patric),
+            new Person("Sponge","Bob","514446666", "sponge@gmail.com","189 Street Jisl, QC",R.drawable.sponjbob),
 
 
     };

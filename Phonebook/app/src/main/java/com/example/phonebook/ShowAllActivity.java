@@ -11,6 +11,8 @@ import android.widget.ListView;
 
 import com.example.phonebook.model.Person;
 
+import static com.example.phonebook.PersonDetailActivity.EXTRA_DRINKED;
+
 public class ShowAllActivity extends AppCompatActivity {
 
     @Override
@@ -26,11 +28,11 @@ public class ShowAllActivity extends AppCompatActivity {
         ArrayAdapter<Person> listAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, Person.personList);
         listView_showAll.setAdapter(listAdapter);
 
-    /*    AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener() {
+        AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-                Intent intent = new Intent(DrinkActivity.this, DrinkCategoryActivity.class);
+                Intent intent = new Intent(ShowAllActivity.this, PersonDetailActivity.class);
 
                 intent.putExtra(EXTRA_DRINKED, (int)l);
                 startActivity(intent);
@@ -38,6 +40,6 @@ public class ShowAllActivity extends AppCompatActivity {
             }
         };
 
-        listView_drink.setOnItemClickListener(itemClickListener);*/
+        listView_showAll.setOnItemClickListener(itemClickListener);
     }
 }
