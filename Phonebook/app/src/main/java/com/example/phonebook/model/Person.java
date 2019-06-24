@@ -2,7 +2,9 @@ package com.example.phonebook.model;
 
 import com.example.phonebook.R;
 
-public class Person {
+import java.util.Comparator;
+
+public class Person implements Comparator<Person> {
     private String name;
     private String family;
     private String phone;
@@ -47,11 +49,19 @@ public class Person {
     public String toString() {
         return getName() + " " + getFamily();
     }
-    public static final Person[] personList = {
+    public static Person[] personList = {
             new Person("Fire","fighter","5144444555", "fire@gmail.com","111 Street Jisl, QC",R.drawable.fire_fighter),
             new Person("Patric","Sang","5144678555", "patrick@gmail.com","123 Street Jisl, QC",R.drawable.patric),
             new Person("Sponge","Bob","514446666", "sponge@gmail.com","189 Street Jisl, QC",R.drawable.sponjbob),
 
 
     };
+
+//fixme
+
+
+    @Override
+    public int compare(Person p1, Person p2) {
+        return (p1.getFamily().compareTo(p2.getFamily()));
+    }
 }

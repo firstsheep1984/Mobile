@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     EditText editText_answer;
     Button btnGenerate, btnValidate, btnClear, btnScore, btnFinish, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn0, btnDot, btnMinus;
     int rightResult;
+    String display = "";
 
     //TODO:
     //List<Button> calculateButtons = new ArrayList<Button>();
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void initialize() {
         textView_generate = findViewById(R.id.textView_generate);
+        setContentView(R.layout.activity_main);
         editText_answer = findViewById(R.id.editText_answer);
 
         btnGenerate = findViewById(R.id.button_generate);
@@ -159,5 +161,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } catch (Exception e) {
             Toast.makeText(this, "Enter a number data type", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    public void ClickOne(View view) {
+        editText_answer.setText(editText_answer.getText().toString()  + "1");
+    }
+
+    public void ClickTwo(View view) {
+        editText_answer.setText(editText_answer.getText().toString()  + "2");
     }
 }

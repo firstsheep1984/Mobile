@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(MainActivity.this, ShowAllActivity.class));
                 break;
             case R.id.button_update:
-
+                startActivity(new Intent(MainActivity.this, PersonActivity.class));
                 break;
 
         }

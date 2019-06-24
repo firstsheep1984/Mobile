@@ -73,7 +73,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:tag="1"
-            android:text="1" />
+            android:text="1"
+            android:onClick="ClickOne"/>
 
         <Button
             android:id="@+id/button2"
@@ -81,7 +82,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="2"
-            android:tag="2"/>
+            android:tag="2"
+            android:onClick="ClickTwo"/>
 
         <Button
             android:id="@+id/button3"
