@@ -74,7 +74,7 @@
             android:layout_weight="1"
             android:tag="1"
             android:text="1"
-            android:onClick="ClickOne"/>
+            />
 
         <Button
             android:id="@+id/button2"
@@ -83,7 +83,7 @@
             android:layout_weight="1"
             android:text="2"
             android:tag="2"
-            android:onClick="ClickTwo"/>
+           />
 
         <Button
             android:id="@+id/button3"
@@ -92,7 +92,7 @@
             android:layout_weight="1"
             android:text="3"
             android:tag="3"
-            android:onClick="ClickThree"/>
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -108,7 +108,7 @@
             android:layout_weight="1"
             android:text="4"
             android:tag="4"
-            android:onClick="ClickFour"/>
+           />
 
         <Button
             android:id="@+id/button5"
@@ -117,7 +117,7 @@
             android:layout_weight="1"
             android:text="5"
             android:tag="5"
-            android:onClick="ClickFive"/>
+            />
 
         <Button
             android:id="@+id/button6"
@@ -126,7 +126,7 @@
             android:layout_weight="1"
             android:text="6"
             android:tag="6"
-            android:onClick="ClickSix"/>
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -142,7 +142,7 @@
             android:layout_weight="1"
             android:text="7"
             android:tag="7"
-            android:onClick="ClickSeven"/>
+            />
 
         <Button
             android:id="@+id/button8"
@@ -151,7 +151,7 @@
             android:layout_weight="1"
             android:text="8"
             android:tag="8"
-            android:onClick="ClickEight"/>
+           />
 
         <Button
             android:id="@+id/button9"
@@ -160,7 +160,7 @@
             android:layout_weight="1"
             android:text="9"
             android:tag="9"
-            android:onClick="ClickNine"/>
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -176,7 +176,7 @@
             android:layout_weight="1"
             android:text="."
             android:tag="."
-            android:onClick="ClickDot"/>
+            />
 
         <Button
             android:id="@+id/button0"
@@ -185,7 +185,7 @@
             android:layout_weight="1"
             android:text="0"
             android:tag="0"
-            android:onClick="ClickZero"/>
+            />
 
         <Button
             android:id="@+id/button_minus"
@@ -194,7 +194,7 @@
             android:layout_weight="1"
             android:text="-"
             android:tag="-"
-            android:onClick="ClickMinus"/>
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -209,7 +209,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="generate"
-            android:onClick="generate"/>
+            />
 
         <Button
             android:id="@+id/button_validate"
@@ -224,7 +224,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="clear"
-            android:onClick="clear"/>
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -246,7 +246,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="finish"
-            android:onClick="finish"/>
+            />
 
     </LinearLayout>
 

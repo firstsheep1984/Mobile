@@ -8,6 +8,8 @@
     android:orientation="vertical"
     android:padding="25dp">
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -24,7 +26,7 @@
             app:layout_constraintTop_toTopOf="parent"
             android:textAllCaps="false"
             android:textSize="30dp"
-           android:layout_gravity="center"/>
+            android:layout_gravity="center"/>
     </LinearLayout>
 
     <LinearLayout
@@ -72,27 +74,27 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="clickOne"
             android:tag="1"
-            android:text="1"
-            android:onClick="ClickOne"/>
+            android:text="1" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="2"
+            android:onClick="clickTwo"
             android:tag="2"
-            android:onClick="ClickTwo"/>
+            android:text="2" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="3"
             android:tag="3"
-            android:onClick="ClickThree"/>
+            android:text="3"
+            android:onClick="clickThree"/>
     </LinearLayout>
 
     <LinearLayout
@@ -106,29 +108,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="4"
+            android:onClick="clickFour"
             android:tag="4"
-            android:onClick="ClickFour"/>
+            android:text="4" />
 
         <Button
             android:id="@+id/button5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="5"
+            android:onClick="clickFive"
             android:tag="5"
-            android:onClick="ClickFive"/>
+            android:text="5" />
 
         <Button
             android:id="@+id/button6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="6"
+            android:onClick="clickSix"
             android:tag="6"
-            android:onClick="ClickSix"/>
+            android:text="6" />
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -140,29 +141,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="7"
+            android:onClick="clickSeven"
             android:tag="7"
-            android:onClick="ClickSeven"/>
+            android:text="7" />
 
         <Button
             android:id="@+id/button8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="8"
+            android:onClick="clickEight"
             android:tag="8"
-            android:onClick="ClickEight"/>
+            android:text="8" />
 
         <Button
             android:id="@+id/button9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="9"
+            android:onClick="clickNine"
             android:tag="9"
-            android:onClick="ClickNine"/>
+            android:text="9" />
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -170,33 +170,32 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button_dot"
+            android:id="@+id/buttonDot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="."
+            android:onClick="clickDot"
             android:tag="."
-            android:onClick="ClickDot"/>
+            android:text="." />
 
         <Button
             android:id="@+id/button0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="0"
+            android:onClick="clickZero"
             android:tag="0"
-            android:onClick="ClickZero"/>
+            android:text="0" />
 
         <Button
-            android:id="@+id/button_minus"
+            android:id="@+id/buttonMinus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="-"
+            android:onClick="clickMinus"
             android:tag="-"
-            android:onClick="ClickMinus"/>
+            android:text="-" />
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -209,7 +208,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="generate"
-            android:onClick="generate"/>
+            />
 
         <Button
             android:id="@+id/button_validate"
@@ -224,7 +223,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="clear"
-            android:onClick="clear"/>
+            android:onClick="goClear"
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -246,7 +246,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="finish"
-            android:onClick="finish"/>
+            />
 
     </LinearLayout>
 
