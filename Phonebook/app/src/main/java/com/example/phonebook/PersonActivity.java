@@ -16,6 +16,7 @@ public class PersonActivity extends AppCompatActivity implements View.OnClickLis
     TextView editText_name, editText_family,editText_phone, editText_email, editText_address;
     Button button_add, button_find, button_remove;
     Person person;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,7 +62,7 @@ public class PersonActivity extends AppCompatActivity implements View.OnClickLis
                 R.drawable.sponjbob);
         personList[personList.length] = person;
         */
-        personList[personList.length] = new Person("d","e","555","email","address", R.drawable.sponjbob);
+       // personList[personList.length] = new Person("d","e","555","email","address", R.drawable.sponjbob);
     }
 
 }

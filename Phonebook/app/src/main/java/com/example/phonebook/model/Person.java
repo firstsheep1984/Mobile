@@ -1,10 +1,11 @@
 package com.example.phonebook.model;
 
 import com.example.phonebook.R;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
-import java.util.Comparator;
-
-public class Person implements Comparator<Person> {
+public class Person implements Comparable<Person>, Serializable {
     private String name;
     private String family;
     private String phone;
@@ -20,7 +21,7 @@ public class Person implements Comparator<Person> {
         this.address = address;
         this.imageResourceId = imageResourceId;
     }
-
+    public Person(){};
     public String getName() {
         return name;
     }
@@ -45,6 +46,30 @@ public class Person implements Comparator<Person> {
         return imageResourceId;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setFamily(String family) {
+        this.family = family;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public void setImageResourceId(int imageResourceId) {
+        this.imageResourceId = imageResourceId;
+    }
+
     @Override
     public String toString() {
         return getName() + " " + getFamily();
@@ -53,15 +78,15 @@ public class Person implements Comparator<Person> {
             new Person("Fire","fighter","5144444555", "fire@gmail.com","111 Street Jisl, QC",R.drawable.fire_fighter),
             new Person("Patric","Sang","5144678555", "patrick@gmail.com","123 Street Jisl, QC",R.drawable.patric),
             new Person("Sponge","Bob","514446666", "sponge@gmail.com","189 Street Jisl, QC",R.drawable.sponjbob),
-
-
     };
 
-//fixme
+    public static List<Person> pList = new ArrayList<>();
+   // pList.add(new Person("Fire","fighter","5144444555", "fire@gmail.com","111 Street Jisl, QC",R.drawable.fire_fighter));
 
+    //fixme
 
     @Override
-    public int compare(Person p1, Person p2) {
-        return (p1.getFamily().compareTo(p2.getFamily()));
+    public int compareTo(Person person) {
+        return family.compareTo(person.getFamily());
     }
 }

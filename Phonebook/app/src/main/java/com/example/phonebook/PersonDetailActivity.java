@@ -19,6 +19,7 @@ public class PersonDetailActivity extends AppCompatActivity {
     ImageView imageView_photo;
     TextView textView_name, textView_family,textView_phone, textView_email, textView_address;
     Person person;
+
     public static final String EXTRA_DRINKED = "drinkid";
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -22,7 +22,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button btnGenerate, btnValidate, btnClear, btnScore, btnFinish, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn0, btnDot, btnMinus;
     int rightResult;
     String question;
-    int answer, score = 0;
+    int answer;
+    int totalNum = 0;
+    int rightAnswer = 0;
     boolean judge;
     QuestionAndAnswer questionAndAnswer;
     static List<QuestionAndAnswer> questionAndAnswerList = new ArrayList<>();
@@ -96,11 +98,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (integerUserAnswer == rightResult) {
             Toast.makeText(this, "Right!", Toast.LENGTH_SHORT).show();
             judge = true;
-            score++;
+            rightAnswer++;
         } else {
             Toast.makeText(this, "Wrong!", Toast.LENGTH_SHORT).show();
             judge = false;
         }
+        totalNum++;
         answer = integerUserAnswer;
         questionAndAnswer = new QuestionAndAnswer(question, answer, judge);
         questionAndAnswerList.add(questionAndAnswer);
