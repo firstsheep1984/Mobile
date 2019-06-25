@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.phonebook.model.Person;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     Button button_showAll, button_update;
     @Override
@@ -14,6 +16,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initialize();
+
+
     }
 
     private void initialize() {
@@ -22,6 +26,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button_showAll.setOnClickListener(this);
         button_update = findViewById(R.id.button_update);
         button_update.setOnClickListener(this);
+
+
 
     }
 

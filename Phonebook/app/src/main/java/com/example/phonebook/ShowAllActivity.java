@@ -15,12 +15,12 @@ import static com.example.phonebook.PersonDetailActivity.EXTRA_DRINKED;
 import static com.example.phonebook.model.Person.personList;
 
 public class ShowAllActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_all);
         initializeListView();
+
     }
     private void initializeListView() {
         ListView listView_showAll = findViewById(R.id.listView_showAll);

@@ -1,0 +1,154 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml:2:1-21:12
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\651baff65aecb7148e00da13700fc55c\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\0953152fed6025a28316520708c8aba6\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\3e69e038d807f594011ecda2ae6fdb77\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\152eee08d4cacea97c22693079255cba\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\aa2f1b3b4ccabfe970874bdbe75d6b7c\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\2ba521344a4545acaf13e807d2374cfb\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\ccdaec2670008c972a057be250196ec5\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\a3fb4603beb39ddeb3c2593eb230e4b3\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\2dcf4578634dacb783b6bc89a0a3c04d\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\35564eaa5acb8b55f0e366a5bdf8bc38\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\84fe385c840df51f67d2312969cd1640\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\3b5c979667f793b719773797d336345f\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\6496f1365ba5dd963b6a05acd0f779a0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\11cc5488db87e38f94e75a63f8c4f5bc\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\4e51f4e225a37a32dd700c9321712d3c\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.1] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\ff5ab063ba573d0fc251a2d6553b4481\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\625822fa56aa907decc872d6c9994629\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\a7e8b36c79b1769cd0ffdc0b07950e5e\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\4ee8b09ddb58130dd6acac3436ab7067\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\5b0cd6f1472f79a4be5e46cae1e02382\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\b89f69963ac25135ec7dc6d2f05b5a3d\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\bafe8e63edb6c961372df5953fb64c6a\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\c78fb78718844b0cdea54d1b5602d79b\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\9bf81e62478776a6ee5c6a330fd78d42\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\39dacb0aa458fd175b087a91b9e1fd7e\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\54341acc5fb6198d1c17f855d7ca464a\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\1a74f7a4158d41a284872e8c3c0e1eeb\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml:2:1-21:12
+	package
+		ADDED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml:3:5-44
+		INJECTED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml:2:1-21:12
+		INJECTED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml:2:1-21:12
+		INJECTED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml:5:5-19:19
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\0953152fed6025a28316520708c8aba6\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\0953152fed6025a28316520708c8aba6\AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.0.1] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\ff5ab063ba573d0fc251a2d6553b4481\AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.1] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\ff5ab063ba573d0fc251a2d6553b4481\AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\625822fa56aa907decc872d6c9994629\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\625822fa56aa907decc872d6c9994629\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.1] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\ff5ab063ba573d0fc251a2d6553b4481\AndroidManifest.xml:22:18-86
+	android:supportsRtl
+		ADDED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml:11:9-40
+activity#com.example.yangyang_mathquiz.MainActivity
+ADDED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml:12:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml:16:27-74
+uses-sdk
+INJECTED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\651baff65aecb7148e00da13700fc55c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\651baff65aecb7148e00da13700fc55c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\0953152fed6025a28316520708c8aba6\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\0953152fed6025a28316520708c8aba6\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\3e69e038d807f594011ecda2ae6fdb77\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\3e69e038d807f594011ecda2ae6fdb77\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\152eee08d4cacea97c22693079255cba\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\152eee08d4cacea97c22693079255cba\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\aa2f1b3b4ccabfe970874bdbe75d6b7c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\aa2f1b3b4ccabfe970874bdbe75d6b7c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\2ba521344a4545acaf13e807d2374cfb\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\2ba521344a4545acaf13e807d2374cfb\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\ccdaec2670008c972a057be250196ec5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\ccdaec2670008c972a057be250196ec5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\a3fb4603beb39ddeb3c2593eb230e4b3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\a3fb4603beb39ddeb3c2593eb230e4b3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\2dcf4578634dacb783b6bc89a0a3c04d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\2dcf4578634dacb783b6bc89a0a3c04d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\35564eaa5acb8b55f0e366a5bdf8bc38\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\35564eaa5acb8b55f0e366a5bdf8bc38\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\84fe385c840df51f67d2312969cd1640\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\84fe385c840df51f67d2312969cd1640\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\3b5c979667f793b719773797d336345f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\3b5c979667f793b719773797d336345f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\6496f1365ba5dd963b6a05acd0f779a0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\6496f1365ba5dd963b6a05acd0f779a0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\11cc5488db87e38f94e75a63f8c4f5bc\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\11cc5488db87e38f94e75a63f8c4f5bc\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\4e51f4e225a37a32dd700c9321712d3c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\4e51f4e225a37a32dd700c9321712d3c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\ff5ab063ba573d0fc251a2d6553b4481\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\ff5ab063ba573d0fc251a2d6553b4481\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\625822fa56aa907decc872d6c9994629\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\625822fa56aa907decc872d6c9994629\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\a7e8b36c79b1769cd0ffdc0b07950e5e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\a7e8b36c79b1769cd0ffdc0b07950e5e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\4ee8b09ddb58130dd6acac3436ab7067\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\4ee8b09ddb58130dd6acac3436ab7067\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\5b0cd6f1472f79a4be5e46cae1e02382\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\5b0cd6f1472f79a4be5e46cae1e02382\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\b89f69963ac25135ec7dc6d2f05b5a3d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\b89f69963ac25135ec7dc6d2f05b5a3d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\bafe8e63edb6c961372df5953fb64c6a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\bafe8e63edb6c961372df5953fb64c6a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\c78fb78718844b0cdea54d1b5602d79b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\c78fb78718844b0cdea54d1b5602d79b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\9bf81e62478776a6ee5c6a330fd78d42\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\9bf81e62478776a6ee5c6a330fd78d42\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\39dacb0aa458fd175b087a91b9e1fd7e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\39dacb0aa458fd175b087a91b9e1fd7e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\54341acc5fb6198d1c17f855d7ca464a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\54341acc5fb6198d1c17f855d7ca464a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\1a74f7a4158d41a284872e8c3c0e1eeb\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ipd\.gradle\caches\transforms-2\files-2.1\1a74f7a4158d41a284872e8c3c0e1eeb\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ipd\Documents\Mobile\Yangyang_MathQuiz\app\src\main\AndroidManifest.xml

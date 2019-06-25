@@ -80,9 +80,14 @@ public class Person implements Comparable<Person>, Serializable {
             new Person("Sponge","Bob","514446666", "sponge@gmail.com","189 Street Jisl, QC",R.drawable.sponjbob),
     };
 
-    public static List<Person> pList = new ArrayList<>();
-   // pList.add(new Person("Fire","fighter","5144444555", "fire@gmail.com","111 Street Jisl, QC",R.drawable.fire_fighter));
+    public static List<Person> pList = new ArrayList<Person>(){};
 
+
+    /*{{
+
+    pList.add(new Person("Fire","fighter","5144444555", "fire@gmail.com","111 Street Jisl, QC",R.drawable.fire_fighter));
+    }};
+*/
     //fixme
 
     @Override
