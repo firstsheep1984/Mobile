@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         int btnId = view.getId();
-        switch (btnId) {
+        switch (btnId) { 
             case R.id.button:
                 tempratureConversation();
                 break;

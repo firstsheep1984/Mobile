@@ -10,13 +10,22 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.math.Model.QuestionAndAnswer;
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    TextView textView_generate;
+    TextView textView_generate, textView_mathquiz;
     EditText editText_answer;
-    Button btnGenerate, btnValidate, btnClear, btnScore, btnFinish, btn1, btn2, btn3,btn4, btn5, btn6, btn7, btn8, btn9, btn0, btnDot, btnMinus;
-int rightResult;
+    Button btnGenerate, btnValidate, btnClear, btnScore, btnFinish, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn0, btnDot, btnMinus;
+    int rightResult;
+    String question;
+    int answer, score = 0;
+    boolean judge;
+    QuestionAndAnswer questionAndAnswer;
+    static List<QuestionAndAnswer> questionAndAnswerList = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +35,7 @@ int rightResult;
 
     private void initialize() {
         textView_generate = findViewById(R.id.textView_generate);
-
+        textView_mathquiz = findViewById(R.id.textView_mathquiz);
         editText_answer = findViewById(R.id.editText_answer);
 
         btnGenerate = findViewById(R.id.button_generate);
@@ -36,7 +45,6 @@ int rightResult;
         btnValidate.setOnClickListener(this);
 
         btnClear = findViewById(R.id.button_clear);
-
 
         btnScore = findViewById(R.id.button_score);
         btnScore.setOnClickListener(this);
@@ -87,10 +95,15 @@ int rightResult;
 
         if (integerUserAnswer == rightResult) {
             Toast.makeText(this, "Right!", Toast.LENGTH_SHORT).show();
+            judge = true;
+            score++;
         } else {
             Toast.makeText(this, "Wrong!", Toast.LENGTH_SHORT).show();
+            judge = false;
         }
-
+        answer = integerUserAnswer;
+        questionAndAnswer = new QuestionAndAnswer(question, answer, judge);
+        questionAndAnswerList.add(questionAndAnswer);
     }
 
     private void showScore() {
@@ -100,29 +113,29 @@ int rightResult;
 
     private void goGenerate() {
 
-            Random random = new Random();
-            int operand1 = random.nextInt(10);
-            int operand2 = random.nextInt(10);
+        Random random = new Random();
+        int operand1 = random.nextInt(10);
+        int operand2 = random.nextInt(10);
 
-            String[] arr = {"+", "-", "*", "/"};
+        String[] arr = {"+", "-", "*", "/"};
 
-            // randomly selects an index from the arr
-            int index = random.nextInt(arr.length);
+        // randomly selects an index from the arr
+        int index = random.nextInt(arr.length);
 
-            String operation = operand1 + arr[index] + operand2;
-            if (operation.equals(operand1 + "+" + operand2)) {
-                rightResult = operand1 + operand2;
-            } else if (operation.equals(operand1 + "-" + operand2)) {
-                rightResult = operand1 - operand2;
-            } else if (operation.equals(operand1 + "*" + operand2)) {
-                rightResult = operand1 * operand2;
-            } else if (operation.equals(operand1 + "/" + operand2)) {
-                rightResult = operand1 / operand2;
-                //TODO: EXCEPTION
-            }
-            textView_generate.setText(operation);
-
+        String operation = operand1 + arr[index] + operand2;
+        if (operation.equals(operand1 + "+" + operand2)) {
+            rightResult = operand1 + operand2;
+        } else if (operation.equals(operand1 + "-" + operand2)) {
+            rightResult = operand1 - operand2;
+        } else if (operation.equals(operand1 + "*" + operand2)) {
+            rightResult = operand1 * operand2;
+        } else if (operation.equals(operand1 + "/" + operand2)) {
+            rightResult = operand1 / operand2;
+            //TODO: EXCEPTION
         }
+        textView_generate.setText(operation);
+        question = operation;
+    }
 
 
     public void clickTwo(View view) {
