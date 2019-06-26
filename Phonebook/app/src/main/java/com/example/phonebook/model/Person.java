@@ -22,7 +22,7 @@ public class Person implements Comparable<Person>, Serializable {
         this.name = name;
         this.family = family;
         this.phone = phone;
-        this.email = email;
+     this.email = email;
         this.address = address;
         this.imageResourceId = imageResourceId;
     }
@@ -63,7 +63,7 @@ public class Person implements Comparable<Person>, Serializable {
         this.phone = phone;
     }
 
-    public void setEmail(String email) throws FormatException {
+    public String setEmail(String email) throws FormatException {
         if (email != null) {
             String regex = "^([_a-zA-Z0-9-]+(\\.[_a-zA-Z0-9-]+)*@[a-zA-Z0-9-]+(\\.[a-zA-Z0-9-]+)*(\\.[a-zA-Z]{1,6}))?$";
             Pattern pattern = Pattern.compile(regex);
@@ -72,7 +72,7 @@ public class Person implements Comparable<Person>, Serializable {
                 throw new FormatException("invalid email");
             }
         }
-        this.email = email;
+        return  email;
     }
 
     public void setAddress(String address) {

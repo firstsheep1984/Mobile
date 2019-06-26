@@ -1,5 +1,6 @@
 package com.example.math;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -26,6 +27,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     int totalNum = 0;
     int rightAnswer = 0;
     boolean judge;
+    String score;
+    final static  int REQUEST_CODE = 1;
     QuestionAndAnswer questionAndAnswer;
     static List<QuestionAndAnswer> questionAndAnswerList = new ArrayList<>();
     @Override
@@ -107,11 +110,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         answer = integerUserAnswer;
         questionAndAnswer = new QuestionAndAnswer(question, answer, judge);
         questionAndAnswerList.add(questionAndAnswer);
+        editText_answer.setText("");
+        score = 100*rightAnswer/totalNum + "%";
     }
 
     private void showScore() {
         Intent intent = new Intent(MainActivity.this, ResultActivity.class);
-        startActivity(intent);
+        intent.putExtra("score", score);
+        startActivityForResult(intent, REQUEST_CODE);
     }
 
     private void goGenerate() {
@@ -193,5 +199,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void goClear(View view) {
         editText_answer.setText("");
         textView_generate.setText("");
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REQUEST_CODE) {
+            String receivedData = (String) data.getStringExtra("return_result");
+            if (resultCode == RESULT_OK)
+                textView_mathquiz.setText(receivedData);
+        }
     }
 }
