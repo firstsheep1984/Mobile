@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity{
         setContentView(R.layout.activity_main);
         editText_answer = findViewById(R.id.editText_answer);
 
-        btnGenerate = findViewById(R.id.button_generate);
+        //btnGenerate = findViewById(R.id.button_generate);
         //  btnGenerate.setOnClickListener(this);
 
         btnValidate = findViewById(R.id.button_validate);
@@ -253,9 +253,7 @@ public class MainActivity extends AppCompatActivity{
         startActivity(intent);
     }
 
-    public void generate(View view) {
-        textView_generate.setText("111");
-    }
+
 
     public void goScore(View view) {
         Intent intent = new Intent(MainActivity.this, ResultActivity.class);
@@ -264,5 +262,9 @@ public class MainActivity extends AppCompatActivity{
 
     public void finish(View view) {
         finish();
+    }
+
+    public void generate(View view) {
+        textView_generate.setText("5554");
     }
 }

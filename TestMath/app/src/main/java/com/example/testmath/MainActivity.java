@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void initialize() {
         textView_generate = findViewById(R.id.textView_generate);
-        setContentView(R.layout.activity_main);
+
         editText_answer = findViewById(R.id.editText_answer);
 
         btnGenerate = findViewById(R.id.button_generate);
@@ -45,14 +45,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
           btnFinish.setOnClickListener(this);
 
         btn0 = findViewById(R.id.button0);
-          btnFinish.setOnClickListener(this);
+          btn0.setOnClickListener(this);
 
 
     }
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()) {
+        int button = view.getId();
+        System.out.println("------------"+button);
+        switch (button) {
 
             case R.id.button_generate:
                 editText_answer.setText("2");
@@ -67,7 +69,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 showScore();
                 break;
             case R.id.button0:
+
                 editText_answer.setText(editText_answer.getText().toString()+"0");
+                System.out.println("------------"+editText_answer.getText().toString()+"0");
                 break;
 
         }
