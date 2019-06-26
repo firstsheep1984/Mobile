@@ -17,10 +17,11 @@ import java.util.Random;
 
 public class PersonDetailActivity extends AppCompatActivity {
     ImageView imageView_photo;
-    TextView textView_name, textView_family,textView_phone, textView_email, textView_address;
+    TextView textView_name, textView_family, textView_phone, textView_email, textView_address;
     Person person;
 
-    public static final String EXTRA_DRINKED = "drinkid";
+    public static final String EXTRA_PERSON = "personid";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +30,7 @@ public class PersonDetailActivity extends AppCompatActivity {
         getmyIntent();
         loadData();
     }
+
     private void initialize() {
         imageView_photo = findViewById(R.id.imageView_photo);
         textView_name = findViewById(R.id.textView_name);
@@ -37,10 +39,12 @@ public class PersonDetailActivity extends AppCompatActivity {
         textView_address = findViewById(R.id.textView_address);
         textView_email = findViewById(R.id.textView_email);
     }
+
     private void getmyIntent() {
-        int drinkId=(Integer) getIntent().getExtras().get(EXTRA_DRINKED);
-        person= Person.personList[drinkId];
+        int personid = (Integer) getIntent().getExtras().get(EXTRA_PERSON);
+        person = Person.pList.get(personid);
     }
+
     private void loadData() {
         imageView_photo.setImageResource(person.getImageResourceId());
         textView_name.setText(person.getName());
@@ -60,7 +64,7 @@ public class PersonDetailActivity extends AppCompatActivity {
                 Intent intent = new Intent(Intent.ACTION_VIEW);
                 //define our action_view
                 intent.setData(Uri.parse("sms:" + person.getPhone()));
-                intent.putExtra("sms_body","Hello！");
+                intent.putExtra("sms_body", "Hello！");
                 startActivity(intent);
                 return false;
             }
