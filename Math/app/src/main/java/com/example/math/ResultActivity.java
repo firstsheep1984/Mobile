@@ -145,4 +145,8 @@ public class ResultActivity extends AppCompatActivity {
             }
         }
     }
+
+    public void showAll(View view) {
+        listView_displayAll();
+    }
 }
