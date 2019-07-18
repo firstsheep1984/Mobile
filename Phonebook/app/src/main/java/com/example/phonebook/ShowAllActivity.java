@@ -30,9 +30,9 @@ public class ShowAllActivity extends AppCompatActivity {
     private void initializeListView() {
         ListView listView_showAll = findViewById(R.id.listView_showAll);
         // test using dummy data
-        pList.add(new Person("Fire", "fighter", "5144444555", "fire@gmail.com", "111 Street Jisl, QC", R.drawable.fire_fighter));
-        pList.add(new Person("Patric", "Sang", "5144678555", "patrick@gmail.com", "123 Street Jisl, QC", R.drawable.patric));
-        pList.add(new Person("Sponge", "Bob", "514446666", "sponge@gmail.com", "189 Street Jisl, QC", R.drawable.sponjbob));
+      //  pList.add(new Person("Fire", "fighter", "5144444555", "fire@gmail.com", "111 Street Jisl, QC", R.drawable.fire_fighter));
+       // pList.add(new Person("Patric", "Sang", "5144678555", "patrick@gmail.com", "123 Street Jisl, QC", R.drawable.patric));
+        //pList.add(new Person("Sponge", "Bob", "514446666", "sponge@gmail.com", "189 Street Jisl, QC", R.drawable.sponjbob));
 
         //Collections.sort(pList);
         Collections.sort(pList, new Comparator<Person>() {

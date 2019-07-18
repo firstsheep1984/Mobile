@@ -1,20 +1,23 @@
 package com.example.a20190625customlist;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.a20190625customlist.XML_JSON.JSON_Paser;
 import com.example.a20190625customlist.XML_JSON.XML_Parser;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemClickListener, AdapterView.OnItemLongClickListener{
     Button button_json, button_xml;
     ListView listView;
     ArrayList<Flower> flowerArrayList;
@@ -45,6 +48,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         flowerArrayList.add(new Flower(122,"flower","Beautiful","asdf",22.22,"pelargonium.jpg"));
         cellController_base_adapter = new CellController_Base_Adapter(this, flowerArrayList);
         listView.setAdapter(cellController_base_adapter);
+        listView.setOnItemClickListener(this);
+        listView.setOnItemLongClickListener(this);
     }
 
     private void initialistView() {
@@ -93,4 +98,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
+    @Override
+    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+        startActivity(new Intent(this,FlowerDetailActivity.class));
+    }
+
+    @Override
+    public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
+        showAlertDialog(view);
+        return true;
+    }
+
+    private void showAlertDialog(View view) {
+        final AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("AlertDialog\njust a question for demo")
+                .setMessage("Do you want to delete this file?")
+                .setCancelable(false)
+                .setIcon(android.R.drawable.ic_dialog_info)
+                //
+              .setPositiveButton("Yes",(dialogInterface,i) -> {
+                    Toast.makeText(MainActivity.this, "It was just a test!", Toast.LENGTH_SHORT).show();
+                })
+                .setNegativeButton("No", null)
+                .setNeutralButton("Cancel", null);
+        builder.show();
+    }
 }
